@@ -532,6 +532,102 @@ footer {
 .feat-desc { max-width: none !important; }
 @media (max-width:720px) { .method-grid { grid-template-columns: 1fr !important; } }
 
+
+/* ══ TABLET (iPad landscape ≤ 1024px) ══ */
+@media (max-width: 1024px) {
+  nav { padding: 0 28px; }
+  .hero { padding: 0 32px; min-height: 420px; }
+  .hero-left { padding: 48px 0; }
+  .hero h1 { font-size: 2.4rem; }
+  .hero-right img { width: 320px; }
+  .pb-text { padding: 40px 36px; }
+  .products { border-top: 1px solid var(--border); }
+  .kit-section { padding: 52px 32px; }
+  .kit-grid { gap: 14px; }
+  .kit-card { width: 240px; }
+  .reviews { padding: 48px 32px; }
+  .reviews-grid { gap: 14px; }
+  footer { padding: 32px 28px 24px; }
+  #email { padding: 40px 28px !important; }
+}
+
+/* ══ TABLET (iPad portrait ≤ 768px) ══ */
+@media (max-width: 768px) {
+  .hero { grid-template-columns: 1fr; padding: 0 24px; min-height: auto; }
+  .hero-left { padding: 40px 0 20px; }
+  .hero h1 { font-size: 2rem; }
+  .hero-right {
+    min-height: 260px;
+    justify-content: center;
+    padding: 0 0 30px;
+  }
+  .hero-right img {
+    width: 260px;
+    position: relative;
+    bottom: auto;
+  }
+  .product-block { grid-template-columns: 1fr; }
+  .product-block.reverse .pb-img { order: -1; }
+  .pb-img { min-height: 280px; order: -1; }
+  .pb-text { padding: 32px 24px; }
+  .pb-title { font-size: 1.8rem; }
+  .how { grid-template-columns: 1fr; }
+  .how-img { min-height: 260px; order: -1; }
+  .how-text { padding: 36px 24px; }
+  .kit-card { width: 100%; max-width: 380px; }
+  .kit-plus { display: none; }
+  .kit-grid { flex-direction: column; align-items: center; }
+  .reviews-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
+  #sib-container { padding: 24px 20px !important; }
+}
+
+/* ══ MOBILE (≤ 480px) ══ */
+@media (max-width: 480px) {
+  .topbar { font-size: 0.7rem; padding: 9px 14px; line-height: 1.4; }
+  nav { padding: 0 16px; height: 56px; }
+  .nav-brand { font-size: 1.1rem; }
+  .nav-cta { padding: 7px 14px; font-size: 0.75rem; }
+  .hero { padding: 0 16px; }
+  .hero-left { padding: 32px 0 16px; }
+  .hero h1 { font-size: 1.75rem; line-height: 1.15; }
+  .hero-sub { font-size: 0.85rem; margin-bottom: 20px; }
+  .hero-actions { flex-direction: column; gap: 10px; }
+  .hero-btn { width: 100%; justify-content: center; padding: 13px 20px; }
+  .hero-right { min-height: 220px; }
+  .hero-right img { width: 200px; }
+  .features { padding: 36px 16px; }
+  .features h2 { font-size: 1.4rem; }
+  .features-grid { grid-template-columns: 1fr; gap: 20px; }
+  .method-grid { grid-template-columns: 1fr !important; }
+  .pb-text { padding: 24px 16px; }
+  .pb-title { font-size: 1.6rem; }
+  .pb-desc { font-size: 0.83rem; }
+  .pb-price { font-size: 1.6rem; }
+  .kit-section { padding: 36px 16px; }
+  .kit-section h2 { font-size: 1.4rem; }
+  .kit-card { width: 100%; }
+  .kit-card-img { height: 200px !important; }
+  .kit-footer { padding-top: 24px; }
+  .kit-total-price { font-size: 1.8rem; }
+  .kit-btn { width: 100%; justify-content: center; padding: 14px; }
+  .reviews { padding: 36px 16px; }
+  .reviews h2 { font-size: 1.4rem; }
+  .rc { padding: 18px 16px; }
+  footer { padding: 28px 16px 20px; flex-direction: column; gap: 16px; }
+  .f-links { flex-direction: column; gap: 10px; }
+  #email { padding: 32px 16px !important; }
+  #sib-container { padding: 20px 16px !important; border-radius: 8px !important; }
+  .sib-form-block__button { width: 100% !important; text-align: center !important; padding: 13px !important; }
+}
+
+/* ══ SMALL PHONE (≤ 375px) ══ */
+@media (max-width: 375px) {
+  .hero h1 { font-size: 1.55rem; }
+  nav { height: 52px; }
+  .nav-brand { font-size: 1rem; }
+  .kit-card-img { height: 180px !important; }
+}
+
 </style>
 </head>
 <body>
