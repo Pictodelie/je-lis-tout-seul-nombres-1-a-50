@@ -1001,155 +1001,13 @@ footer { /* white - see inline */ }
   </div>
 </section>
 
-<!-- ══ FORMULAIRE CAHIER D'ÉCRITURE — HTML SIMPLE ══ -->
-<section style="background:#FAFAF8;padding:56px 52px;border-bottom:1px solid var(--border);">
-
-<style>
-  .cahier-wrap { max-width: 520px; margin: 0 auto; }
-  .cahier-card {
-    background: white;
-    border-radius: 14px;
-    padding: 40px 40px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.10);
-    text-align: center;
-  }
-  .cahier-title {
-    font-family: "Playfair Display", serif;
-    font-size: 1.5rem;
-    font-weight: 900;
-    color: #1A1A1A;
-    margin-bottom: 24px;
-    letter-spacing: -0.01em;
-  }
-  .cahier-img {
-    max-width: 260px;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-    margin-bottom: 24px;
-  }
-  .cahier-text {
-    font-family: "DM Sans", sans-serif;
-    font-size: 0.88rem;
-    font-weight: 400;
-    color: #555;
-    line-height: 1.75;
-    text-align: center;
-    margin-bottom: 26px;
-  }
-  .cahier-text strong { color: #1A1A1A; font-weight: 600; }
-  .cahier-field { margin-bottom: 16px; text-align: left; }
-  .cahier-field label {
-    display: block;
-    font-family: "DM Sans", sans-serif;
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #6B6B6B;
-    margin-bottom: 6px;
-  }
-  .cahier-field input {
-    width: 100%;
-    padding: 11px 15px;
-    border: 1.5px solid #E8E8E8;
-    border-radius: 6px;
-    font-family: "DM Sans", sans-serif;
-    font-size: 0.92rem;
-    color: #1A1A1A;
-    background: white;
-    outline: none;
-    box-sizing: border-box;
-  }
-  .cahier-field input:focus { border-color: #4E8FCC; }
-  .cahier-note {
-    font-family: "DM Sans", sans-serif;
-    font-size: 0.7rem;
-    color: #aaa;
-    text-align: left;
-    margin-top: -8px;
-    margin-bottom: 18px;
-  }
-  .cahier-submit {
-    width: 100%;
-    background: #E05C5C;
-    color: white;
-    font-family: "DM Sans", sans-serif;
-    font-size: 0.92rem;
-    font-weight: 700;
-    padding: 14px 28px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: opacity .2s;
-  }
-  .cahier-submit:hover { opacity: 0.88; }
-  .cahier-msg {
-    display: none;
-    max-width: 520px;
-    margin: 0 auto 16px;
-    font-family: "DM Sans", sans-serif;
-    font-size: 0.9rem;
-    text-align: left;
-    border-radius: 6px;
-    padding: 14px 18px;
-    align-items: center;
-    gap: 10px;
-  }
-  .cahier-msg.open { display: flex; }
-  #cahier-success { color: #085229; background-color: #e7faf0; border: 1px solid #13ce66; }
-  #cahier-error   { color: #661d1d; background-color: #ffeded; border: 1px solid #ff4949; }
-</style>
-
-<div class="cahier-wrap">
-
-  <div id="cahier-success" class="cahier-msg">
-    <span style="font-size:1.2rem">✅</span>
-    <span>Vous allez recevoir votre cahier d'écriture par email. Vérifiez vos spams !</span>
-  </div>
-  <div id="cahier-error" class="cahier-msg">
-    <span style="font-size:1.2rem">⚠️</span>
-    <span>Nous n'avons pas pu confirmer votre inscription. Réessayez.</span>
-  </div>
-
-  <div class="cahier-card" id="cahier-card">
-    <div class="cahier-title">JE TÉLÉCHARGE<br>MON CAHIER D'ÉCRITURE 📥</div>
-
-    <img class="cahier-img" src="https://img.mailinblue.com/11392899/images/content_library/original/6a38557b7e5c017aaad188bd.png" alt="Cahier d'écriture">
-
-    <div class="cahier-text">
-      <p>✨ Merci d'avoir acheté notre <strong>Kit Pédagogique Je lis tout seul</strong> ✨</p>
-      <p>&nbsp;</p>
-      <p>Vous avez fait le bon choix en offrant le Soroban et la Table Numérique à votre enfant. Désormais, il va pouvoir s'entraîner à compter avec vous, tout en s'entraînant à écrire les nombres de 1 à 50 en chiffres et en lettres.</p>
-      <p>&nbsp;</p>
-      <p><strong>📥 Obtenez votre cahier d'écriture PDF immédiatement 📥</strong></p>
-      <p><strong>(vérifiez vos spams)</strong></p>
-      <p>&nbsp;</p>
-      <p>Nous vous souhaitons une bonne session d'apprentissage mathématique avec votre enfant !</p>
-    </div>
-
-    <form id="cahier-form" method="POST"
-          action="https://3df63e32.sibforms.com/serve/MUIFAPaimDNJt5zIOW4MFQrzBvD3CGNgDT4V1h0_BwJ_xSbzErDIlgjUPfCj9VyMy6KnIxOGgyAQGj41e4hWxSqFOB6UoiooeiH_hdHLPeVG8rsht4qSSi5mLLWp7kgUGbHAcURxrELugxVpKjqz682s4SonINJDSnKGgKcPSFFOMJb6x0cg5xRFcjaGNeTS5U9fVajvc_kot7oKZg==">
-
-      <div class="cahier-field">
-        <label for="cahier-PRENOM">Prénom</label>
-        <input type="text" id="cahier-PRENOM" name="PRENOM" maxlength="200" autocomplete="off" placeholder="Votre prénom" required>
-      </div>
-
-      <div class="cahier-field">
-        <label for="cahier-EMAIL">Email</label>
-        <input type="email" id="cahier-EMAIL" name="EMAIL" autocomplete="off" placeholder="votre@email.com" required>
-      </div>
-      <div class="cahier-note">Vérifiez vos spams après inscription.</div>
-
-      <button type="submit" class="cahier-submit">RECEVOIR MON PDF</button>
-
-      <input type="text" name="email_address_check" value="" style="display:none">
-      <input type="hidden" name="locale" value="fr">
-    </form>
-  </div>
-</div>
-
+<!-- ══ FORMULAIRE CAHIER D'ÉCRITURE — IFRAME BREVO ══ -->
+<section style="background:#FAFAF8;padding:56px 52px;border-bottom:1px solid var(--border);text-align:center;">
+  <iframe width="600" height="1250"
+          src="https://3df63e32.sibforms.com/v2/serve/MUIFAPaimDNJt5zIOW4MFQrzBvD3CGNgDT4V1h0_BwJ_xSbzErDIlgjUPfCj9VyMy6KnIxOGgyAQGj41e4hWxSqFOB6UoiooeiH_hdHLPeVG8rsht4qSSi5mLLWp7kgUGbHAcURxrELugxVpKjqz682s4SonINJDSnKGgKcPSFFOMJb6x0cg5xRFcjaGNeTS5U9fVajvc_kot7oKZg=="
+          frameborder="0" scrolling="auto" allowfullscreen
+          style="display:block;margin-left:auto;margin-right:auto;max-width:100%;border-radius:14px;box-shadow:0 8px 32px rgba(0,0,0,0.10);">
+  </iframe>
 </section>
 <!-- ══ FIN FORMULAIRE CAHIER D'ÉCRITURE ══ -->
 
@@ -1250,30 +1108,6 @@ footer { /* white - see inline */ }
 })();
 </script>
 
-<script>
-(function() {
-  var form = document.getElementById('cahier-form');
-  if (!form) return;
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    var params = new URLSearchParams(new FormData(form));
-    document.getElementById('cahier-error').classList.remove('open');
-    document.getElementById('cahier-success').classList.remove('open');
-    fetch(form.action, {
-      method: 'POST',
-      headers: {'Content-Type': 'application/x-www-form-urlencoded'},
-      body: params.toString()
-    })
-    .then(function() {
-      document.getElementById('cahier-card').style.display = 'none';
-      document.getElementById('cahier-success').classList.add('open');
-    })
-    .catch(function() {
-      document.getElementById('cahier-card').style.display = 'none';
-      document.getElementById('cahier-success').classList.add('open');
-    });
-  });
-})();
-</script>
+
 </body>
 </html>
