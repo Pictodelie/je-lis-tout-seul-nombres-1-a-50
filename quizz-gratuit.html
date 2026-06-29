@@ -860,41 +860,6 @@ nav {
   font-size: 0.92rem; color: rgba(26,26,26,0.65);
   max-width: 440px; margin: 0 auto 28px; line-height: 1.7;
 }
-#sib-form-q { background: transparent !important; }
-#sib-container-q {
-  background: white !important; border: none !important;
-  border-radius: 12px !important; padding: 28px 32px !important;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.10) !important;
-  max-width: 480px; margin: 0 auto;
-}
-#sib-container-q .entry__label {
-  font-family:"DM Sans",sans-serif !important;
-  font-size:0.72rem !important; font-weight:600 !important;
-  letter-spacing:0.1em !important; text-transform:uppercase !important;
-  color:#6B6B6B !important;
-}
-#sib-container-q .input {
-  width:100% !important; padding:11px 15px !important;
-  border:1.5px solid #E8E8E8 !important; border-radius:6px !important;
-  font-family:"DM Sans",sans-serif !important; font-size:0.92rem !important;
-  color:#1A1A1A !important; background:white !important; outline:none !important;
-}
-#sib-container-q .input:focus { border-color:#4E8FCC !important; }
-#sib-container-q .sib-form-block__button {
-  background:var(--ink) !important; color:white !important;
-  font-family:"DM Sans",sans-serif !important; font-size:0.88rem !important;
-  font-weight:700 !important; padding:13px 24px !important;
-  border-radius:6px !important; border:none !important;
-  cursor:pointer !important; width:100% !important; text-align:center !important;
-}
-#nl-success {
-  display:none; max-width:480px; margin:16px auto 0;
-  background:#F0FDF4; border:1.5px solid #34D399;
-  border-radius:10px; padding:16px 20px;
-  font-family:"Playfair Display",serif;
-  font-size:0.95rem; font-weight:700; color:#065F46;
-}
-#nl-success.open { display:flex; align-items:center; gap:12px; }
 
 /* ── KIT PROMO — red bg ── */
 .q-kit {
@@ -1095,60 +1060,9 @@ nav { position: relative !important; }
 
 <!-- NEWSLETTER -->
 <section class="q-newsletter">
-  <style>
-    @font-face {font-display:block;font-family:Roboto;src:url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2")}
-    #sib-container-q input::placeholder {font-family:Helvetica,sans-serif;color:#c0ccda;}
-  </style>
-  <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
   <h3>Suivez notre actualité 📬</h3>
   <p>Soyez informés de la sortie de nos nouveaux livres et ressources pédagogiques !</p>
-  <div id="sib-form-q">
-    <div id="sib-container-q">
-      <form id="brevo-nl" method="POST" action="https://3df63e32.sibforms.com/serve/MUIFAPaimDNJt5zIOW4MFQrzBvD3CGNgDT4V1h0_BwJ_xSbzErDIlgjUPfCj9VyMy6KnIxOGgyAQGj41e4hWxSqFOB6UoiooeiH_hdHLPeVG8rsht4qSSi5mLLWp7kgUGbHAcURxrELugxVpKjqz682s4SonINJDSnKGgKcPSFFOMJb6x0cg5xRFcjaGNeTS5U9fVajvc_kot7oKZg==">
-        <div style="padding:6px 0">
-          <div class="sib-input sib-form-block">
-            <div class="form__entry entry_block">
-              <div class="form__label-row">
-                <label class="entry__label" for="nl-prenom">Prénom</label>
-                <div class="entry__field">
-                  <input class="input" type="text" id="nl-prenom" name="PRENOM" placeholder="Votre prénom" required>
-                </div>
-              </div>
-              <label class="entry__error entry__error--primary"></label>
-            </div>
-          </div>
-        </div>
-        <div style="padding:6px 0">
-          <div class="sib-input sib-form-block">
-            <div class="form__entry entry_block">
-              <div class="form__label-row">
-                <label class="entry__label" for="nl-email">Adresse e-mail</label>
-                <div class="entry__field">
-                  <input class="input" type="email" id="nl-email" name="EMAIL" placeholder="votre@email.com" required>
-                </div>
-              </div>
-              <label class="entry__error entry__error--primary"></label>
-            </div>
-          </div>
-        </div>
-        <div style="padding:8px 0;text-align:center">
-          <button class="sib-form-block__button sib-form-block__button-with-loader" form="brevo-nl" type="submit">
-            <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
-              <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"/>
-            </svg>
-            S'INSCRIRE À LA NEWSLETTER
-          </button>
-        </div>
-        <input type="text" name="email_address_check" value="" class="input--hidden">
-        <input type="hidden" name="locale" value="fr">
-        <input type="hidden" name="html_type" value="simple">
-      </form>
-    </div>
-  </div>
-  <div id="nl-success">
-    <span style="font-size:1.3rem">✅</span>
-    <span>Merci ! Vous êtes bien inscrit·e à notre newsletter.</span>
-  </div>
+  <iframe width="540" height="305" src="https://3df63e32.sibforms.com/v2/serve/MUIFAO4qpmdfsqVdJMULdycxwXZqUAN4XTnxefeU-6NJLPXaMmpIUFct3w0dylw4_2V1XWqRO8huIkEwdx8dHk_qGT7J7udJmpgT3qj0GL5GkPPFt2mKaxfI7CZaLl3udywf67NEJyq-VhcnMQWVf8rnyVarHrM9hvTXGSgt2bRR-Al3IiaOOBwTmeorXRC7EPYMB2UfmhRz5QjrhA==" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
 </section>
 
 
@@ -1169,24 +1083,5 @@ nav { position: relative !important; }
   </div>
 </footer>
 
-<script>
-(function() {
-  var form = document.getElementById('brevo-nl');
-  if (!form) return;
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    var params = new URLSearchParams(new FormData(form));
-    fetch(form.action, {method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body:params.toString()})
-    .then(function() {
-      document.getElementById('sib-container-q').style.display='none';
-      document.getElementById('nl-success').classList.add('open');
-    })
-    .catch(function() {
-      document.getElementById('sib-container-q').style.display='none';
-      document.getElementById('nl-success').classList.add('open');
-    });
-  });
-})();
-</script>
 </body>
 </html>
