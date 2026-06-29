@@ -972,17 +972,31 @@ footer { /* white - see inline */ }
   .q-newsletter { padding:32px 14px; }
   .q-kit { padding:32px 14px; }
 }
+
+nav { position: relative !important; }
+.nav-brand {
+  position: absolute !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+.nav-right { margin-left: auto !important; }
+
+.nav-link {
+  font-size: 0.82rem; font-weight: 600; color: #888;
+  text-decoration: none; transition: color .2s;
+}
+.nav-link:hover { color: #1A1A1A; }
 </style>
 </head>
 <body>
 
 <!-- NAV -->
+<div class="topbar">&nbsp;</div>
+
 <nav>
-  <div class="nav-brand">
-    <span style="color:#4A90D9">j</span><span style="color:#E05C5C">e</span>&nbsp;<span style="color:#4A90D9">l</span><span style="color:#E05C5C">i</span><span style="color:#5BBB6F">s</span>&nbsp;<span style="color:#4A90D9">t</span><span style="color:#E05C5C">o</span><span style="color:#5BBB6F">u</span><span style="color:#4A90D9">t</span>&nbsp;<span style="color:#E05C5C">s</span><span style="color:#5BBB6F">eu</span><span style="color:#4A90D9">l</span>
-  </div>
+  <a href="https://jelistoutseul.fr/" class="nav-brand" style="text-decoration:none;cursor:pointer;"><span style="color:#4A90D9">j</span><span style="color:#E05C5C">e</span>&nbsp;<span style="color:#4A90D9">l</span><span style="color:#E05C5C">i</span><span style="color:#888888">s</span>&nbsp;<span style="color:#4A90D9">t</span><span style="color:#5BBB6F">ou</span><span style="color:#888888">t</span>&nbsp;<span style="color:#4A90D9">s</span><span style="color:#5BBB6F">eu</span><span style="color:#4A90D9">l</span></a>
   <div class="nav-right">
-    <a href="https://pictodelie.github.io/je-lis-tout-seul-nombres-1-a-50/quizz-gratuit.html" class="qnav-link">Collection</a>
+    <a href="https://jelistoutseul.fr/" class="nav-link">Collection</a>
   </div>
 </nav>
 
@@ -1076,13 +1090,14 @@ footer { /* white - see inline */ }
 <!-- FOOTER -->
 <footer style="background:white !important;border-top:2px solid #E8E8E8;padding:24px 52px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;">
   <div style="font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:900;">
-    <span style="color:#4A90D9">j</span><span style="color:#E05C5C">e</span>&nbsp;<span style="color:#4A90D9">l</span><span style="color:#E05C5C">i</span><span style="color:#5BBB6F">s</span>&nbsp;<span style="color:#4A90D9">t</span><span style="color:#E05C5C">o</span><span style="color:#5BBB6F">u</span><span style="color:#4A90D9">t</span>&nbsp;<span style="color:#E05C5C">s</span><span style="color:#5BBB6F">eu</span><span style="color:#4A90D9">l</span>
+    <span style="color:#4A90D9">j</span><span style="color:#E05C5C">e</span>&nbsp;<span style="color:#4A90D9">l</span><span style="color:#E05C5C">i</span><span style="color:#888888">s</span>&nbsp;<span style="color:#4A90D9">t</span><span style="color:#5BBB6F">ou</span><span style="color:#888888">t</span>&nbsp;<span style="color:#4A90D9">s</span><span style="color:#5BBB6F">eu</span><span style="color:#4A90D9">l</span>
   </div>
   <div style="display:flex;flex-direction:column;gap:6px;align-items:flex-end;">
     <div style="display:flex;gap:24px;flex-wrap:wrap;justify-content:flex-end;">
-      <a href="https://pictodelie.github.io/je-lis-tout-seul-nombres-1-a-50/quizz-gratuit.html" style="font-size:0.82rem;font-weight:600;color:#888;text-decoration:none;transition:color .2s;" onmouseover="this.style.color='#1A1A1A'" onmouseout="this.style.color='#888'">Collection</a>
-      <a href="mailto:pictodelie@gmail.com" style="font-size:0.82rem;font-weight:600;color:#888;text-decoration:none;transition:color .2s;" onmouseover="this.style.color='#1A1A1A'" onmouseout="this.style.color='#888'">Contact</a>
-      <a href="#" style="font-size:0.82rem;font-weight:600;color:#888;text-decoration:none;transition:color .2s;" onmouseover="this.style.color='#1A1A1A'" onmouseout="this.style.color='#888'">Mentions légales</a>
+      <a href="https://jelistoutseul.fr/" style="font-size:0.82rem;font-weight:600;color:#888;text-decoration:none;transition:color .2s;" onmouseover="this.style.color='#1A1A1A'" onmouseout="this.style.color='#888'">Collection</a>
+      <a href="https://pictodelie.github.io/je-lis-tout-seul-nombres-1-a-50/#kit" style="font-size:0.82rem;font-weight:600;color:#888;text-decoration:none;transition:color .2s;" onmouseover="this.style.color='#1A1A1A'" onmouseout="this.style.color='#888'">Kit Pédagogique</a>
+      <a href="mentions-legales.html" style="font-size:0.82rem;font-weight:600;color:#888;text-decoration:none;transition:color .2s;" onmouseover="this.style.color='#1A1A1A'" onmouseout="this.style.color='#888'">Mentions légales</a>
+      <a href="confidentialite.html" style="font-size:0.82rem;font-weight:600;color:#888;text-decoration:none;transition:color .2s;" onmouseover="this.style.color='#1A1A1A'" onmouseout="this.style.color='#888'">Politique de confidentialité</a>
     </div>
     <div style="font-size:0.7rem;color:#ccc;text-align:right;">© 2026 Jennifer Picquette – Pictodélie Art. Tous droits réservés.</div>
   </div>
