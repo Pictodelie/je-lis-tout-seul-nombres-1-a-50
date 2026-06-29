@@ -1060,10 +1060,179 @@ nav { position: relative !important; }
 
 <!-- NEWSLETTER -->
 <section class="q-newsletter">
-  <h3>Suivez notre actualité 📬</h3>
-  <p>Soyez informés de la sortie de nos nouveaux livres et ressources pédagogiques !</p>
-  <iframe width="540" height="305" src="https://3df63e32.sibforms.com/v2/serve/MUIFAO4qpmdfsqVdJMULdycxwXZqUAN4XTnxefeU-6NJLPXaMmpIUFct3w0dylw4_2V1XWqRO8huIkEwdx8dHk_qGT7J7udJmpgT3qj0GL5GkPPFt2mKaxfI7CZaLl3udywf67NEJyq-VhcnMQWVf8rnyVarHrM9hvTXGSgt2bRR-Al3IiaOOBwTmeorXRC7EPYMB2UfmhRz5QjrhA==" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
+  <style>
+    @font-face { font-display:block; font-family:Roboto; src:url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2") }
+    @font-face { font-display:fallback; font-family:Roboto; font-weight:600; src:url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2") }
+    @font-face { font-display:fallback; font-family:Roboto; font-weight:700; src:url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2") }
+    #sib-container-q input:-ms-input-placeholder { font-family:Helvetica,sans-serif; color:#c0ccda; }
+    #sib-container-q input::placeholder { font-family:Helvetica,sans-serif; color:#c0ccda; }
+    #sib-container-q a { text-decoration:underline; color:#2BB2FC; }
+
+    /* Override Brevo defaults to match our design */
+    #sib-form-container-q { max-width: 540px; margin: 0 auto; }
+    #sib-container-q {
+      background-color: white !important;
+      border: none !important;
+      border-radius: 12px !important;
+      padding: 32px 36px !important;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.10) !important;
+    }
+    #sib-container-q .sib-text-form-block h3 {
+      font-family: "Playfair Display", serif !important;
+      font-size: 1.6rem !important;
+      font-weight: 900 !important;
+      color: #1A1A1A !important;
+      margin-bottom: 6px !important;
+    }
+    #sib-container-q .sib-text-form-block p {
+      font-family: "DM Sans", sans-serif !important;
+      font-size: 0.92rem !important;
+      color: #6B6B6B !important;
+      margin-bottom: 0 !important;
+    }
+    #sib-container-q .entry__label {
+      font-family: "DM Sans", sans-serif !important;
+      font-size: 0.75rem !important;
+      font-weight: 600 !important;
+      letter-spacing: 0.08em !important;
+      text-transform: uppercase !important;
+      color: #6B6B6B !important;
+    }
+    #sib-container-q .input {
+      width: 100% !important;
+      padding: 11px 15px !important;
+      border: 1.5px solid #E8E8E8 !important;
+      border-radius: 6px !important;
+      font-family: "DM Sans", sans-serif !important;
+      font-size: 0.92rem !important;
+      color: #1A1A1A !important;
+      background: white !important;
+      outline: none !important;
+      transition: border-color 0.2s !important;
+    }
+    #sib-container-q .input:focus { border-color: #4E8FCC !important; }
+    #sib-container-q .sib-form-block__button {
+      background-color: #E05C5C !important;
+      color: white !important;
+      font-family: "DM Sans", sans-serif !important;
+      font-size: 0.88rem !important;
+      font-weight: 700 !important;
+      letter-spacing: 0.06em !important;
+      padding: 13px 28px !important;
+      border-radius: 6px !important;
+      border: none !important;
+      cursor: pointer !important;
+      transition: opacity 0.2s !important;
+      width: auto !important;
+      text-align: center !important;
+    }
+    #sib-container-q .sib-form-block__button:hover { opacity: 0.88 !important; }
+    .sib-form-q { background-color: transparent !important; }
+    #sib-container-q .entry__error--primary {
+      font-family: "DM Sans", sans-serif !important;
+      font-size: 0.78rem !important;
+      border-radius: 4px !important;
+    }
+    #sib-container-q .entry__specification {
+      font-size: 0.7rem !important;
+      color: #aaa !important;
+    }
+  </style>
+  <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+
+  <div class="sib-form-q" style="text-align:center; background-color:transparent;">
+    <div id="sib-form-container-q" class="sib-form-container">
+      <div id="sib-container-q" class="sib-container--large sib-container--vertical">
+        <!-- Success message (hidden by default) -->
+        <div id="brevo-success-q" style="display:none; background:#E8F8EF; border:1.5px solid #52B788; border-radius:8px; padding:16px 20px; margin-bottom:16px; align-items:center; gap:12px;">
+          <span style="font-size:1.4rem">✅</span>
+          <span style="font-family:'DM Sans',sans-serif; font-size:0.95rem; font-weight:600; color:#1A5C38;">Votre inscription est confirmée. Merci !</span>
+        </div>
+
+        <form id="sib-form-q" method="POST" action="https://3df63e32.sibforms.com/serve/MUIFAO4qpmdfsqVdJMULdycxwXZqUAN4XTnxefeU-6NJLPXaMmpIUFct3w0dylw4_2V1XWqRO8huIkEwdx8dHk_qGT7J7udJmpgT3qj0GL5GkPPFt2mKaxfI7CZaLl3udywf67NEJyq-VhcnMQWVf8rnyVarHrM9hvTXGSgt2bRR-Al3IiaOOBwTmeorXRC7EPYMB2UfmhRz5QjrhA==" onsubmit="handleBrevoSubmitQ(event)">
+
+          <div style="padding:8px 0">
+            <div class="sib-form-block" style="text-align:left">
+              <div class="sib-text-form-block">
+                <h3>Suivez notre actualité 📬</h3>
+                <p>Soyez informés de la sortie de nos nouveaux livres et ressources pédagogiques !</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="padding:8px 0">
+            <div class="sib-input sib-form-block">
+              <div class="form__entry entry_block">
+                <div class="form__label-row">
+                  <label class="entry__label" for="PRENOM-q" data-required="*">Prénom</label>
+                  <div class="entry__field">
+                    <input class="input" maxlength="200" type="text" id="PRENOM-q" name="PRENOM" autocomplete="off" placeholder="Votre prénom" data-required="true" required />
+                  </div>
+                </div>
+                <label class="entry__error entry__error--primary"></label>
+              </div>
+            </div>
+          </div>
+
+          <div style="padding:8px 0">
+            <div class="sib-input sib-form-block">
+              <div class="form__entry entry_block">
+                <div class="form__label-row">
+                  <label class="entry__label" for="EMAIL-q" data-required="*">Adresse e-mail</label>
+                  <div class="entry__field">
+                    <input class="input" type="text" id="EMAIL-q" name="EMAIL" autocomplete="off" value="" placeholder="votre@email.com" data-required="true" required />
+                  </div>
+                </div>
+                <label class="entry__error entry__error--primary"></label>
+                <label class="entry__specification">Ex. : abc@xyz.com</label>
+              </div>
+            </div>
+          </div>
+
+          <div style="padding:8px 0; text-align:center">
+            <div class="sib-form-block">
+              <button class="sib-form-block__button sib-form-block__button-with-loader" form="sib-form-q" type="submit">
+                <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
+                  <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
+                </svg>
+                S'INSCRIRE
+              </button>
+            </div>
+          </div>
+
+          <input type="text" name="email_address_check" value="" class="input--hidden">
+          <input type="hidden" name="locale" value="fr">
+          <input type="hidden" name="html_type" value="simple">
+        </form>
+      </div>
+    </div>
+  </div>
 </section>
+
+<script>
+function handleBrevoSubmitQ(e) {
+  e.preventDefault();
+  const form = document.getElementById('sib-form-q');
+  const data = new FormData(form);
+
+  fetch(form.action, {
+    method: 'POST',
+    body: data,
+    headers: { 'Accept': 'application/json' },
+    mode: 'no-cors'
+  })
+  .then(() => { showBrevoSuccessQ(); })
+  .catch(() => { showBrevoSuccessQ(); });
+}
+
+function showBrevoSuccessQ() {
+  const form = document.getElementById('sib-form-q');
+  const msg  = document.getElementById('brevo-success-q');
+  form.style.display = 'none';
+  msg.style.display  = 'flex';
+  msg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+</script>
 
 
 
