@@ -154,7 +154,7 @@ nav {
   margin: 0 auto 44px; line-height: 1.72;
 }
 .features-grid {
-  display: grid; grid-template-columns: repeat(4, 1fr);
+  display: grid; grid-template-columns: repeat(3, 1fr);
   gap: 28px; max-width: 900px; margin: 0 auto;
 }
 .feat-item { display: flex; flex-direction: column; align-items: center; gap: 10px; }
@@ -292,36 +292,7 @@ nav {
 .step h4 { font-size: 0.92rem; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
 .step p  { font-size: 0.81rem; line-height: 1.65; color: var(--muted); }
 
-/* ══ REVIEWS ══ */
-.reviews {
-  padding: 64px 52px; text-align: center;
-  border-bottom: 1px solid var(--border);
-}
-.reviews h2 {
-  font-family: "Playfair Display", serif;
-  font-size: 1.8rem; font-weight: 700; color: var(--ink); margin-bottom: 8px;
-}
-.reviews-sub { font-size: 0.78rem; color: var(--muted); margin-bottom: 10px; }
-.tp-row {
-  display: flex; align-items: center; justify-content: center;
-  gap: 10px; margin-bottom: 40px;
-}
-.tp-stars { color: #00B67A; font-size: 1rem; letter-spacing: 2px; }
-.tp-label { font-size: 0.78rem; color: var(--muted); font-weight: 500; }
-.reviews-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr);
-  gap: 20px; max-width: 920px; margin: 0 auto;
-}
-.rc {
-  background: white; border: 1px solid var(--border);
-  border-radius: 10px; padding: 22px 20px; text-align: left;
-}
-.rc-stars { color: #00B67A; font-size: 0.85rem; margin-bottom: 8px; }
-.rc-title { font-size: 0.88rem; font-weight: 700; margin-bottom: 6px; color: var(--ink); }
-.rc-text  { font-size: 0.78rem; line-height: 1.62; color: var(--muted); }
-.rc-author { font-size: 0.7rem; color: #bbb; margin-top: 12px; font-weight: 500; }
 
-/* ══ BOTTOM SPLIT ══ */
 .bottom-split {
   display: grid; grid-template-columns: 1fr 1fr;
   min-height: 400px; border-bottom: 1px solid var(--border);
@@ -522,7 +493,6 @@ footer {
   .hero { padding: 0 28px; }
   .pb-text { padding: 40px 32px; }
   .kit-section { padding: 52px 28px; }
-  .reviews { padding: 48px 28px; }
   footer { padding: 32px 28px 22px; }
   #email { padding: 40px 28px !important; }
   /* Kit cards slightly smaller on iPad landscape */
@@ -566,8 +536,6 @@ footer {
   .kit-section { padding: 40px 16px; }
   .kit-section h2 { font-size: 1.5rem; }
 
-  .reviews { padding: 40px 20px; }
-  .reviews-grid { grid-template-columns: 1fr; max-width: 500px; margin: 0 auto; }
   .how { grid-template-columns: 1fr; }
   .how-img { min-height: 240px; order: -1; }
   .how-text { padding: 32px 24px; }
@@ -636,10 +604,6 @@ footer {
   .kit-total-price { font-size: 1.8rem; }
   .kit-btn { width: 100%; justify-content: center; padding: 14px; }
 
-  .reviews { padding: 32px 14px; }
-  .reviews-grid { grid-template-columns: 1fr; }
-  .rc { padding: 16px 14px; }
-
   footer { padding: 24px 14px 18px; flex-direction: column; gap: 14px; }
   .f-links { flex-direction: column; gap: 8px; }
 
@@ -679,7 +643,7 @@ nav { position: relative !important; justify-content: center !important; }
     <h1>Le prolongement<br>officiel du livre.</h1>
     <p class="hero-sub">Trois outils pour ancrer les nombres dans le réel et poser les bases du calcul mental. Conçus pour accompagner chaque enfant de la découverte jusqu'à l'autonomie.</p>
     <div class="hero-actions">
-      <a href="https://pictodelie.github.io/je-lis-tout-seul-nombres-1-a-50/#kit" class="hero-btn btn-green">Je veux le kit</a>
+      <a href="https://jelistoutseul.fr/kit-pedagogique" class="hero-btn btn-green">Je veux le kit</a>
     </div>
     <div class="hero-stars">
       <span class="stars">★★★★★</span>
@@ -739,7 +703,7 @@ nav { position: relative !important; justify-content: center !important; }
         <div class="pb-feat"><div class="pb-feat-dot"></div>Rangement facile</div>
       </div>
       <div style="margin-top:28px;padding-top:22px;border-top:1px solid var(--border)">
-        <a href="https://pictodelie.github.io/je-lis-tout-seul-nombres-1-a-50/#kit" style="display:inline-flex;align-items:center;gap:8px;background:#E8B84B;color:#1A1A1A;padding:13px 26px;border-radius:6px;font-size:0.88rem;font-weight:700;text-decoration:none;letter-spacing:0.03em;transition:opacity .2s" onmouseover="this.style.opacity='.85'" onmouseout="this.style.opacity='1'">Je veux le kit →</a>
+        <a href="https://jelistoutseul.fr/kit-pedagogique" style="display:inline-flex;align-items:center;gap:8px;background:#E8B84B;color:#1A1A1A;padding:13px 26px;border-radius:6px;font-size:0.88rem;font-weight:700;text-decoration:none;letter-spacing:0.03em;transition:opacity .2s" onmouseover="this.style.opacity='.85'" onmouseout="this.style.opacity='1'">Je veux le kit →</a>
       </div>
     </div>
   </div>
@@ -760,7 +724,7 @@ nav { position: relative !important; justify-content: center !important; }
         <div class="pb-feat"><div class="pb-feat-dot"></div>Bases du calcul mental</div>
       </div>
       <div style="margin-top:28px;padding-top:22px;border-top:1px solid var(--border)">
-        <a href="https://pictodelie.github.io/je-lis-tout-seul-nombres-1-a-50/#kit" style="display:inline-flex;align-items:center;gap:8px;background:#E8B84B;color:#1A1A1A;padding:13px 26px;border-radius:6px;font-size:0.88rem;font-weight:700;text-decoration:none;letter-spacing:0.03em;transition:opacity .2s" onmouseover="this.style.opacity='.85'" onmouseout="this.style.opacity='1'">Je veux le kit →</a>
+        <a href="https://jelistoutseul.fr/kit-pedagogique" style="display:inline-flex;align-items:center;gap:8px;background:#E8B84B;color:#1A1A1A;padding:13px 26px;border-radius:6px;font-size:0.88rem;font-weight:700;text-decoration:none;letter-spacing:0.03em;transition:opacity .2s" onmouseover="this.style.opacity='.85'" onmouseout="this.style.opacity='1'">Je veux le kit →</a>
       </div>
     </div>
   </div>
@@ -782,7 +746,7 @@ nav { position: relative !important; justify-content: center !important; }
         <div class="pb-feat"><div class="pb-feat-dot"></div>Accès via QR code dans le kit + impression illimitée</div>
       </div>
       <div style="margin-top:28px;padding-top:22px;border-top:1px solid var(--border)">
-        <a href="https://pictodelie.github.io/je-lis-tout-seul-nombres-1-a-50/#kit" style="display:inline-flex;align-items:center;gap:8px;background:#E8B84B;color:#1A1A1A;padding:13px 26px;border-radius:6px;font-size:0.88rem;font-weight:700;text-decoration:none;letter-spacing:0.03em;transition:opacity .2s" onmouseover="this.style.opacity='.85'" onmouseout="this.style.opacity='1'">Je veux le kit →</a>
+        <a href="https://jelistoutseul.fr/kit-pedagogique" style="display:inline-flex;align-items:center;gap:8px;background:#E8B84B;color:#1A1A1A;padding:13px 26px;border-radius:6px;font-size:0.88rem;font-weight:700;text-decoration:none;letter-spacing:0.03em;transition:opacity .2s" onmouseover="this.style.opacity='.85'" onmouseout="this.style.opacity='1'">Je veux le kit →</a>
       </div>
     </div>
   </div>
@@ -790,35 +754,7 @@ nav { position: relative !important; justify-content: center !important; }
 
 </div>
 
-<!-- ══ REVIEWS ══ -->
-<section class="reviews" id="avis">
-  <h2>Ce que disent les familles.</h2>
-  <p class="reviews-sub">Premiers retours de lecteurs</p>
-  <div class="tp-row">
-    <span class="tp-stars">★★★★★</span>
-    <span class="tp-label">Excellent · Basé sur les premiers retours</span>
-  </div>
-  <div class="reviews-grid">
-    <div class="rc">
-      <div class="rc-stars">★★★★★</div>
-      <div class="rc-title">Mon fils adore le soroban !</div>
-      <div class="rc-text">Il manipule les billes tout seul, on voit vraiment qu'il associe la quantité au chiffre. Incroyable pour un enfant de 4 ans.</div>
-      <div class="rc-author">— Marie L., maman de Tom (4 ans)</div>
-    </div>
-    <div class="rc">
-      <div class="rc-stars">★★★★★</div>
-      <div class="rc-title">La table numérique, un must</div>
-      <div class="rc-text">Ma fille est fière d'appuyer sur les chiffres. Elle a progressé en deux semaines. Je recommande à toutes les familles !</div>
-      <div class="rc-author">— Sophie R., maman de Léa (3 ans)</div>
-    </div>
-    <div class="rc">
-      <div class="rc-stars">★★★★★</div>
-      <div class="rc-title">Parfait avec le livre</div>
-      <div class="rc-text">Le kit prolonge parfaitement le livre. Vraie cohérence pédagogique.</div>
-      <div class="rc-author">— Aurélie M., enseignante</div>
-    </div>
-  </div>
-</section>
+
 
 
 <!-- ══ KIT COMPLET ══ -->
@@ -879,7 +815,7 @@ nav { position: relative !important; justify-content: center !important; }
         <div class="kit-total-price" style="color:#E05C5C">27,77 €</div>
       </div>
     </div>
-    <a href="https://pictodelie.github.io/je-lis-tout-seul-nombres-1-a-50/#kit" class="kit-btn">Je veux le kit →</a>
+    <a href="https://jelistoutseul.fr/kit-pedagogique" class="kit-btn">Je veux le kit →</a>
   </div>
 </section>
 
@@ -1079,7 +1015,7 @@ nav { position: relative !important; justify-content: center !important; }
   <div class="f-brand"><span style="color:#4A90D9">j</span><span style="color:#E05C5C">e</span>&nbsp;<span style="color:#4A90D9">l</span><span style="color:#E05C5C">i</span><span style="color:#888888">s</span>&nbsp;<span style="color:#4A90D9">t</span><span style="color:#5BBB6F">ou</span><span style="color:#888888">t</span>&nbsp;<span style="color:#4A90D9">s</span><span style="color:#5BBB6F">eu</span><span style="color:#4A90D9">l</span></div>
   <div class="f-links">
     <a href="https://jelistoutseul.fr/">Collection</a>
-    <a href="https://pictodelie.github.io/je-lis-tout-seul-nombres-1-a-50/#kit">Kit Pédagogique</a>
+    <a href="https://jelistoutseul.fr/kit-pedagogique">Kit Pédagogique</a>
     <a href="mentions-legales.html">Mentions légales</a>
     <a href="confidentialite.html">Politique de confidentialité</a>
   </div>
